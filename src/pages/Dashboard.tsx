@@ -8,7 +8,6 @@ import {
   Scan,
   ShieldCheck,
   Bot,
-  Plus,
   ShoppingBag,
   Plane
 } from 'lucide-react';
@@ -192,16 +191,6 @@ export default function Dashboard() {
             <div className="text-left">
               <p className="font-bold text-lg">Scanner de Notas</p>
               <p className="text-slate-500 text-xs font-semibold">Catalogue notas e cupons com IA</p>
-            </div>
-          </Link>
-
-          <Link to="/credits" className="flex-1 glass p-6 premium-shadow flex items-center gap-4 transition-transform hover:-translate-y-1 active:translate-y-0 group border-white/10">
-            <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform shadow-lg shadow-emerald-500/5">
-              <Plus size={26} />
-            </div>
-            <div className="text-left text-white">
-              <p className="font-bold text-lg">Registrar Ganhos</p>
-              <p className="text-white/40 text-xs font-semibold">Créditos e recebíveis mensais</p>
             </div>
           </Link>
           

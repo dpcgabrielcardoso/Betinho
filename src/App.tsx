@@ -1,16 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import ScamDetector from './pages/ScamDetector';
 import Assistant from './pages/Assistant';
 import OCRScanner from './pages/OCRScanner';
-import IncomeManager from './pages/IncomeManager';
 import LandingPage from './pages/LandingPage';
 
 export default function App() {
   // Simple check to show landing page or dashboard
   // In a real app, this would be based on auth state
-  const isAuthenticated = true; 
+  const isAuthenticated = true;
 
   return (
     <Router>
@@ -23,7 +22,6 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/scanner" element={<OCRScanner />} />
-                <Route path="/credits" element={<IncomeManager />} />
                 <Route path="/detector" element={<ScamDetector />} />
                 <Route path="/chat" element={<Assistant />} />
                 {/* Fallback for other routes */}

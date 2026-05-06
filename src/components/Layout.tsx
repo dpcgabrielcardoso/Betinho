@@ -5,7 +5,6 @@ import {
   ShieldAlert, 
   MessageSquare, 
   Camera, 
-  TrendingUp,
   Settings, 
   Bell,
   Menu,
@@ -19,7 +18,6 @@ import { cn } from '@/src/lib/utils';
 const navItems = [
   { icon: Home, label: 'Início', path: '/' },
   { icon: Camera, label: 'Scanner IA', path: '/scanner' },
-  { icon: TrendingUp, label: 'Créditos', path: '/credits' },
   { icon: ShieldAlert, label: 'Detector de Golpes', path: '/detector' },
   { icon: MessageSquare, label: 'Consultor IA', path: '/chat' },
 ];
